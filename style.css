@@ -24,6 +24,8 @@ div {
     justify-content: center;
 }
 
+
+
 .btn-dw-ios{
     background-color: #26BBA4;
     color: aliceblue;
@@ -222,4 +224,4 @@ footer{
     display: flex;
     justify-content: flex-end;
     margin-left: 900px;
-}
+} 
