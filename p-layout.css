@@ -1,0 +1,225 @@
+body{
+    background-color: #fff;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    color: #4C545C;
+}
+
+p, h1{
+    font-weight: 600;
+    
+    display: flex;
+    justify-content: center;
+    letter-spacing: -0.75px;
+    line-height: 125%;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-dw-ios{
+    background-color: #26BBA4;
+    color: aliceblue;
+    display: inline-block;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 28px;
+}
+
+.btn-dw-mac{
+    background-color: #6174FF;
+    color: aliceblue;
+    padding: 12px;
+    border-radius: 28px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.second-section{
+    display: block;
+}
+
+.computer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.computer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+
+.inf{
+    display: block;
+    max-width: 300px;
+    margin-left: 1000px;
+    margin-top: -450px;
+}
+
+.third-section{
+    display: block;
+}
+
+.sec-img{
+    display: flex;
+    justify-content: center;
+}
+
+.clipboard{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    word-spacing: -0.6px;
+}
+
+.fourth-sec{
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.recursos{
+    display: block;
+    flex-direction: column;
+}
+
+.image{
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+}
+
+h3, p{
+    display: flex;
+    justify-content: center;
+}
+
+.sixth-sec{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.logo-group{
+    margin-top: 63px;
+    height: 72px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clip-mac-ios{
+    size: 20px;
+    line-height: 150%;
+    word-spacing: 0.15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ios-btn{
+    background-color: #26BBA4;
+    color: #fff;
+    padding: 12px;
+    border-radius: 28px;
+}
+
+.mac-btn{
+    background-color: #6174FF;
+    color: #fff;
+    padding: 12px;
+    border-radius: 28px;
+}
+
+.buttons{
+    gap: 16px;
+}
+
+.image-size{
+    height: 55px;
+    width: 55px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 110px 140px 160px auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0;
+    row-gap: 4px;
+    margin: 24px auto 0;
+}
+
+@media (min-width: 1300px){
+    body{
+        background-color: #62162f;
+    }
+    
+    h1{
+        font-size: 46px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.6px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+    }
+
+}
+
+
+@media (max-width: 1300px){
+    body{background-color: #cd8d00;}
+}
+
+@media (max-width: 500px){
+    body{
+        background-color: darkblue;
+    }
+}
+
+.sc-media{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 900px;
+}
