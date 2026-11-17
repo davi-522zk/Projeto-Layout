@@ -72,12 +72,12 @@ div {
 }
 
 .btn-dw-ios{
-    background-color: #daf1de;
-    color: #0c4137;
+    background: linear-gradient(to top, gray, black);
+    color: #fff;
     display: inline-block;
     justify-content: center;
     padding: 12px;
-    box-shadow: 1.5px 1.5px 14px #26BBA4;
+    box-shadow: 1.5px 1.5px 14px #555c66;
     border-radius: 28px;
     border: none;
     padding: 32px;
@@ -86,9 +86,8 @@ div {
 }
 
 .btn-dw-ios:hover{
-    background-color: #a82223;
     color: #fff;
-    box-shadow: 1.5px 1.5px 14px #a82223;
+    box-shadow: 1.5px 1.5px 14px black;
     transform: scale(1.1);
     transition: all 1s ease;
     transition: background-color 0.5 ease, color 0.5 ease;
@@ -106,12 +105,13 @@ div {
 }
 
 .btn-dw-mac:hover{
-    background-color: #6174FF;
-    box-shadow: 1.5px 1.5px 14px #6174FF;
+    background-color: goldenrod;
+    box-shadow: 1.5px 1.5px 14px goldenrod;
     color: aliceblue;
     transform: scale(1.1);
     transition: all 1s ease;
     transition: background-color 0.5 ease, color 0.5 ease;
+    transition: transform 0.5 ease-in-out;
 }
 
 section{
@@ -263,6 +263,38 @@ h3, p{
 
 .buttons{
     gap: 16px;
+}
+
+.ios-btn{
+    border: none;
+    padding: 16px;
+    box-shadow: 1.5px 1.5px 14px #26BBA4;
+    transition: background-color 0.3 ease-in-out;
+    transition: box-shadow 0.3 ease-in-out;
+    padding: 23px;
+}
+
+.mac-btn{
+    border: none;
+    padding: 16px;
+    box-shadow: 1.5px 1.5px 14px #6174FF;
+    transition: background-color 0.3s ease-in-out;
+    transition: box-shadow 0.3 ease-in-out;
+    padding: 23px   ;
+}
+
+.ios-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #555c66, #cfd4da);
+    box-shadow: 1.5px 1.5px 14px #555c66;
+}
+
+.mac-btn:hover{
+    background: linear-gradient(to top, #555c66, #cfd4da);
+    box-shadow: 1.5px 1.5px 14px #555c66;
+    transform:  scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .image-size{
