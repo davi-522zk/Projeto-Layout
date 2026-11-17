@@ -3,20 +3,59 @@ body{
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 600;
     font-style: normal;
+    margin: 0;
+}
+
+
+
+.opq-bck,
+.opq-bck img{
+    width: 100%;
+}
+
+/* Alteracao: fundo atras do header, sem ocupar espaco no fluxo */
+.opq-bck{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.img{
+    margin-top: 44px;
+}
+
+.opq-bck img{
+    display: block;
+    height: auto;
 }
 
 *{
-    color: #4C545C;
+    color: #6174FF;
 }
 
 p, h1{
     font-weight: 600;
-    
     display: flex;
     justify-content: center;
     letter-spacing: -0.75px;
     line-height: 125%;
+}
 
+.img{
+    margin-bottom: 56px;
+}
+
+.inf{
+    margin-left: 72px;
+}
+
+.init-inform{
+    margin-bottom: 48px;
+}
+
+.second-section{
+    margin-top: 92px;
 }
 
 div {
@@ -24,22 +63,55 @@ div {
     justify-content: center;
 }
 
+.computer, .inf{
+    margin-bottom: 150px;
+}
 
+.disclaimer{
+    margin-bottom: 96px;
+}
 
 .btn-dw-ios{
-    background-color: #26BBA4;
-    color: aliceblue;
+    background-color: #daf1de;
+    color: #0c4137;
     display: inline-block;
     justify-content: center;
     padding: 12px;
+    box-shadow: 1.5px 1.5px 14px #26BBA4;
     border-radius: 28px;
+    border: none;
+    padding: 32px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-dw-ios:hover{
+    background-color: #a82223;
+    color: #fff;
+    box-shadow: 1.5px 1.5px 14px #a82223;
+    transform: scale(1.1);
+    transition: all 1s ease;
+    transition: background-color 0.5 ease, color 0.5 ease;
 }
 
 .btn-dw-mac{
-    background-color: #6174FF;
-    color: aliceblue;
-    padding: 12px;
+    background-color: #f2cb15;
+    color: black;
+    font-weight: 600;
+    box-shadow: 1.5px 1.5px 14px #f2cb15;
+    padding: 32px;
     border-radius: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-dw-mac:hover{
+    background-color: #6174FF;
+    box-shadow: 1.5px 1.5px 14px #6174FF;
+    color: aliceblue;
+    transform: scale(1.1);
+    transition: all 1s ease;
+    transition: background-color 0.5 ease, color 0.5 ease;
 }
 
 section{
@@ -49,27 +121,49 @@ section{
 }
 
 .second-section{
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .computer{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    margin-bottom: 15px;
+    
     gap: 48px;
 }
 
+::selection{
+    background-color: olivedrab;
+}
+
 .computer{
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
-    margin-left: 300px;
+    margin-left: max(0px, calc((100% - 943px) / 2));
 }
 
 .inf{
-    display: block;
+    display: inline-block;
     max-width: 300px;
-    margin-left: 1000px;
-    margin-top: -450px;
+    margin: 0 0 0 32px;
+    vertical-align: top;
+}
+
+.inf > h3,
+.inf > p{
+    display: block;
+    margin: 0;
+}
+
+.inf > h3{
+    line-height: 1.35;
+    margin-bottom: 4px;
+}
+
+.inf > p{
+    line-height: 1.45;
+    margin-bottom: 16px;
 }
 
 .third-section{
@@ -80,6 +174,13 @@ section{
     display: flex;
     justify-content: center;
 }
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .clipboard{
     display: flex;
@@ -98,6 +199,7 @@ section{
 
 .description{
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -172,6 +274,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 footer{
     display: grid;
     grid-template-columns: 110px 140px 160px auto;
@@ -184,9 +291,12 @@ footer{
 
 @media (min-width: 1300px){
     body{
-        background-color: #62162f;
+        background-color: #cfd4da;
+        *{
+            color: #555c66;
+        }
     }
-    
+}
     h1{
         font-size: 46px;
         line-height: 125%;
@@ -207,21 +317,134 @@ footer{
         letter-spacing: 0.15px;
     }
 
-}
-
 
 @media (max-width: 1300px){
-    body{background-color: #cd8d00;}
+    body{
+        background-color: #f2cb15;
+
+        *{
+            color: black;
+        }
+        ::selection{
+            background-color: bisque;
+        }
+    }
 }
 
 @media (max-width: 500px){
     body{
         background-color: darkblue;
+        
+        *{
+            color: aliceblue;
+        }
     }
 }
 
 .sc-media{
     display: flex;
+
     justify-content: flex-end;
     margin-left: 900px;
-} 
+}
+
+.description, h2{
+    display: flex;
+    justify-content: center;
+}
+
+.disclaimer{
+    margin-top: 120px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opq-bck img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.init-inform{
+    flex-direction: column;
+}
+
+footer, a{
+    background-color: #daf1de;
+    color: #0c4137;
+    font-weight: 600;
+}
+
+.sc-media{
+    margin-bottom: 32px;
+}
+
+footer{
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+.image-size{
+    padding-bottom: 12px;
+}
+
+@media (max-width: 600px){
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 12px;
+    }
+
+    .image-size{
+        grid-row: auto;
+    }
+
+    a{
+        text-align: center;
+    }
+
+    .sc-media{
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 900px){
+    .computer{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .computer img, .sec-img img{
+        width: 90%;
+    }
+
+    .inf{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .sixth-sec{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .logo-group{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .logo-group img{
+        max-width: 140px;
+    }
+}
+
+.snippets{
+    margin-bottom: 62px;
+}
